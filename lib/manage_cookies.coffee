@@ -1,13 +1,12 @@
-_ = require('lodash')
 
-module.exports = class ManageCookies
+class ManageCookies
 
   createCookie:(name, value, days=0)->
-    unless _.isUndefined(name) || _.isUndefined(value)
+    if name || value
       document.cookie = name + "=" + value + @setExpires(days) + "; path=/";
 
   deleteCookie:(name)->
-    unless _.isUndefined(name)
+    if name
       document.cookie = name + "=nil;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
 
   setExpires:(days)->
@@ -34,3 +33,4 @@ module.exports = class ManageCookies
     return undefined
 
 
+module.exports = ManageCookies
