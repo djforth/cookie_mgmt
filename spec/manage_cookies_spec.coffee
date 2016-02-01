@@ -1,4 +1,4 @@
-Cookie = require('../lib/manage_cookies.coffee')
+Cookie = require('../src/manage_cookies.coffee')
 
 describe "Manage Cookies", ->
   beforeEach ->
