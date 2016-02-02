@@ -1,6 +1,6 @@
 {
   "name": "@djforth/cookie_mgmt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cookie Management",
   "main": "index.js",
   "scripts": {
